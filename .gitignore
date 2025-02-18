@@ -1,0 +1,14 @@
+*.aux
+*.log
+*.nlo
+*.out
+*.toc
+*.pytxcode
+*.pytxmcr
+*.synctex.gz
+*.bbl
+*.blg
+main-blx.bib
+main.run.xml
+pythontex-files-main/
+.vscode/settings.json

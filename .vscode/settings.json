@@ -1,0 +1,72 @@
+{
+    "latex-workshop.latex.tools": [
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "env": {}
+        }, // Add this block for BibTeX
+        {
+            "name": "pythontex",
+            "command": "pythontex",
+            "args": [
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "compile with pythontex enabled",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pythontex",
+                "bibtex",
+                "pdflatex"                
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex"
+            ]
+        }
+    ],
+    "ltex.additionalRules.motherTongue": "fr",
+    "ltex.additionalRules.languageModel": "fr",
+    "ltex.language": "fr",
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "latex-workshop.linting.run": "onType",
+    "latex-workshop.linting.delay": 1000,
+    "git.autofetch": true,
+    "latex-workshop.linting.chktex.convertOutput.column.enabled": false,
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "files.autoSave": "afterDelay",
+    "editor.rulers": [
+        100,
+        150
+    ],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#5aeaa789"
+    }
+}

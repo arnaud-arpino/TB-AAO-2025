@@ -1,0 +1,7 @@
+{"rule":"FR_SPELLING_RULE","sentence":"^\\QNous avons à notre disposition un banc de traction, un duromètre, un four et un laminoir.\\E$"}
+{"rule":"FR_SPELLING_RULE","sentence":"^\\QNous avons à notre disposition un banc de traction, un duromètre Vickers, un four et un laminoir.\\E$"}
+{"rule":"SENTENCE_WHITESPACE","sentence":"^\\QCrausaz\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qont des ponts d'hydrogènes entre les molécules\\E$"}
+{"rule":"FR_SPELLING_RULE","sentence":"^\\QNous avons vu avec M. Crausaz, Et dans le cas des fibres à 45°?\\E$"}
+{"rule":"ESPACE_APRES_POINT","sentence":"^\\Qeffectuer : pythontex main.tex\\E$"}
+{"rule":"AGREEMENT_NUMERAL_SINGULAR","sentence":"^\\Q[HTML]CBCEFB Propriété Valeur H [\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q] 55,34 L1 [\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q] 9,95 L2 [\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q] 9,94 Section [\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q] 98,903 Masse [\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q] 45,07 Surface [\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q] 23,992312 Masse après nickelage [\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q] 45,51 Masse de nickel [\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q] 0,44 Dimensions de l'éprouvette\\E$"}

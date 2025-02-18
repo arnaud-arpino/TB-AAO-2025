@@ -1,0 +1,46 @@
+\documentclass{rapport}
+\usepackage{pythontex}
+\usepackage{csquotes}
+\addbibresource{library.bib}
+\title{Rapport laboratoire de matériaux : nickelage} %Titre du fichier
+
+\begin{document}
+
+%----------- Informations du rapport ---------
+
+\unif{HEIG}
+\titre{Nickelage} %Titre du fichier .pdf
+\cours{Matériaux} %Nom du cours
+\sujet{Labo 1} %Nom du sujet
+
+
+\enseignant{Pierre \textsc{Burdet}\\
+Quentin \textsc{Raball} }%Nom de l'enseignant
+
+\eleves{Arnaud \textsc{Arpino} \\
+        Paul \textsc{Bernard de Courville} \\
+		Nikola \textsc{Bozic}\\
+        Célien \textsc{Pitteloud} } %Nom des élèves
+
+\nom{Arnaud ARPINO, Nikola BOZIC,\\ Paul DE COURVILLE, Célien PITTELOUD}
+
+%----------- Initialisation -------------------
+        
+\fairemarges %Afficher les marges
+\fairepagedegarde %Créer la page de garde
+%\tabledematieres %Créer la table de matières
+
+%------------ Corps du rapport ----------------
+
+%\input{Chapitres/plan_experience.tex}
+\input{Chapitres/rapport.tex}
+%\input{Chapitres/commandes.tex}
+
+\newpage
+% \printbibliography % To generate the bibliography
+\appendix
+\includepdf[pages=1,pagecommand={\thispagestyle{empty}\vspace*{-4.8cm}\section{Protocole de polissage}\label{pdf: polissage}}]{pdfs/TP03 Protocole polissage manuel.pdf}
+\includepdf[pages=2]{pdfs/TP03 Protocole polissage manuel.pdf}
+
+
+\end{document}

@@ -9,38 +9,62 @@
 %----------- Informations du rapport ---------
 
 \unif{HEIG}
-\titre{Nickelage} %Titre du fichier .pdf
-\cours{Matériaux} %Nom du cours
-\sujet{Labo 1} %Nom du sujet
+\titre{Conception d'un système automatisé permettant le cassage de microcapsules en verre et la libération contrôlée de réactifs chimiques} %Titre du fichier .pdf
+\cours{Travail de bachelor} %Nom du cours
+\sujet{Laboratoire Swiss cat +} %Nom du sujet
 
 
-\enseignant{Pierre \textsc{Burdet}\\
-Quentin \textsc{Raball} }%Nom de l'enseignant
+\enseignant{Giuseppe \textsc{Costanzo}}%Nom de l'enseignant
 
-\eleves{Arnaud \textsc{Arpino} \\
-        Paul \textsc{Bernard de Courville} \\
-		Nikola \textsc{Bozic}\\
-        Célien \textsc{Pitteloud} } %Nom des élèves
+\eleves{Arnaud \textsc{Arpino} } %Nom des élèves
 
-\nom{Arnaud ARPINO, Nikola BOZIC,\\ Paul DE COURVILLE, Célien PITTELOUD}
+\entreprise{EPFL - Swiss Cat + \\
+Keyan VILLAT\\
+Henryk ZOLNOWSKI
+}
+
+\nom{Arnaud ARPINO}
 
 %----------- Initialisation -------------------
         
 \fairemarges %Afficher les marges
 \fairepagedegarde %Créer la page de garde
-%\tabledematieres %Créer la table de matières
+
+\pagenumbering{roman} 
+\input{Chapitres/0-Prembule.tex} 
+
+\clearpage
+\pagestyle{plain} 
+
+\thispagestyle{roman}
+\tabledematieres %Créer la table de matières
+\newpage
+
+\thispagestyle{roman}
+\listoftables
+\newpage
+
+\thispagestyle{roman}
+\listoffigures
+
+\clearpage
+\pagenumbering{arabic} 
+\pagestyle{fancy}
+\setcounter{page}{1}
 
 %------------ Corps du rapport ----------------
 
-%\input{Chapitres/plan_experience.tex}
-\input{Chapitres/rapport.tex}
+\input{Chapitres/1-Intro.tex}
+\input{Chapitres/2-CDH.tex}
+\input{Chapitres/3-Cat-sol.tex}
+\input{Chapitres/98-Signatures}
 %\input{Chapitres/commandes.tex}
 
 \newpage
-% \printbibliography % To generate the bibliography
+\printbibliography % To generate the bibliography
 \appendix
-\includepdf[pages=1,pagecommand={\thispagestyle{empty}\vspace*{-4.8cm}\section{Protocole de polissage}\label{pdf: polissage}}]{pdfs/TP03 Protocole polissage manuel.pdf}
-\includepdf[pages=2]{pdfs/TP03 Protocole polissage manuel.pdf}
+%\includepdf[pages=1,pagecommand={\thispagestyle{empty}\vspace*{-4.8cm}\section{Protocole de polissage}\label{pdf: polissage}}]{pdfs/TP03 Protocole polissage manuel.pdf}
+%\includepdf[pages=2]{pdfs/TP03 Protocole polissage manuel.pdf}
 
 
 \end{document}

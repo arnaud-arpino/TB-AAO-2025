@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.1 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,5 +16,46 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}\enddatalist
+\datalist[entry]{nty/global//global/global}
+  \entry{projmulti2024}{report}{}
+    \name{author}{4}{}{%
+      {{hash=AA}{%
+         family={Arpino},
+         familyi={A\bibinitperiod},
+         given={Arnaud},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ME}{%
+         family={Munck},
+         familyi={M\bibinitperiod},
+         given={Eliott},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Gavin},
+         familyi={G\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RE}{%
+         family={Rivera},
+         familyi={R\bibinitperiod},
+         given={Evan},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AA+1}
+    \strng{fullhash}{AAMEGPRE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Cahier des charges}
+    \list{institution}{1}{%
+      {HEIG-VD}%
+    }
+    \field{type}{techreport}
+    \field{year}{2024}
+  \endentry
+\enddatalist
 \endinput

@@ -1,9 +1,9 @@
 \LoadClass[a4paper,12pt]{article} % Classe du document
 \setlength{\parindent}{0cm}
 %--------------------- Packages ------------------------
-\RequirePackage[backend=bibtex]{biblatex}
 \RequirePackage[french]{babel} %Langue du document
 \RequirePackage[utf8]{inputenc} %Caractères spéciaux
+\RequirePackage[backend=bibtex]{biblatex}
 \RequirePackage[section]{placeins}%Pour placement de section
 \RequirePackage[T1]{fontenc} %Quelques lettres qui sont pas inclus dans UTF-8
 \RequirePackage{mathtools} %Paquet pour des équations et symboles mathématiques
@@ -28,7 +28,6 @@
 \usepackage{colortbl}
 \usepackage{enumitem} % Required for customizing lists
 
-
 %-------------------- Informations sur le rapport ----------------------
 
 \newcommand{\cours}[1]{\renewcommand{\cours}{#1}}
@@ -36,6 +35,7 @@
 \newcommand{\titre}[1]{\renewcommand{\titre}{#1}}
 \newcommand{\enseignant}[1]{\renewcommand{\enseignant}{#1}}
 \newcommand{\eleves}[1]{\renewcommand{\eleves}{#1}}
+\newcommand{\entreprise}[1]{\renewcommand{\entreprise}{#1}}
 \newcommand{\unif}[1]{\renewcommand{\unif}{#1}}
 \newcommand{\nom}[1]{\renewcommand{\nom}{#1}}
 
@@ -47,21 +47,33 @@
 
 %--------------------- Header / Footer ----------------------
 \lhead{\includegraphics[width=2cm]{logos/LogoTitre.png}} %Header Left
-\chead{\nom} %Header center
-\rhead{\nouppercase{\today}} %Header right
+\chead{\leftmark} %Header center
+\rhead{\includegraphics[width=3.5cm]{logos/Logo_swiss_cat.png}} %Header right
 \rfoot{\thepage} %Footer right
-\cfoot{\titre} %Footer center
+\cfoot{} %Footer center
 \lfoot{\cours} %Footer left
+
 }
 
 \fancypagestyle{noPage}{
 	\fancyheadoffset{1cm}
 	\setlength{\headheight}{2cm}
 	\lhead{\includegraphics[width=2cm]{logos/LogoTitre.png}} %Header Left
-	\chead{\nom} %Header center
-	\rhead{\nouppercase{\today}} %Header right
+	\chead{\leftmark} %Header center
+	\rhead{\includegraphics[width=2cm]{logos/Logo_swiss_cat.png}} %Header right
 	\cfoot{\titre} %Footer center
 	\lfoot{\cours} %Footer left
+}
+
+\fancypagestyle{roman}{
+	\fancyheadoffset{1cm}
+	\setlength{\headheight}{2cm}
+	\lhead{\includegraphics[width=2cm]{logos/LogoTitre.png}} %Header Left
+	\chead{\leftmark} %Header center
+	\rhead{\includegraphics[width=3.5cm]{logos/Logo_swiss_cat.png}} %Header right
+	\rfoot{\roman{page}} %Footer right
+	\cfoot{} %Footer center
+	\lfoot{} %Footer left
 }
 
 
@@ -71,43 +83,53 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=2.5cm]{logos/LogoTitre.png}
-		\hspace{10cm}
-		\includegraphics[width=2.5cm]{logos/HES_SO_Logo_RGB.png}
+		\hspace{9cm}
+		\includegraphics[width=4cm]{logos/hes-so.png}
 	\end{figure}
 
-
-
-
- \centering %Centraliser le contenu
+	\centering %Centraliser le contenu
+	\vspace{1cm}%Espace de 1cm
+	{\scshape\Large Département TIN - Filière \textbf{Microtechniques} \\ Option Robotique et conception microtechnique	 \par} %sous-titre
+	\vspace{0.5cm}%Espace de 1cm
+	
  	\rule{\linewidth}{0.2 mm} \\[0.4 cm]
  	{\huge\bfseries \titre \par} \
- 	\rule{\linewidth}{0.2 mm} \\[1.5 cm]
- 	\vspace{0.2cm}%Espace de 1cm
-	{\scshape\Large \cours \\ \sujet \\ Rapport \par} %sous-titre
-	\vspace{1cm}%Espace de 1cm
-	
+	\rule{\linewidth}{0.2 mm} \\[0.3 cm]
+
+	{\scshape\Large \cours \par} %sous-titre
+
+	\vspace{1cm}
+
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=8cm]{logos/nickelage-logo.jpg}
+		\includegraphics[width=10cm]{logos/Logo_swiss_cat.png}
 		\label{fig:debutimage}
 	\end{figure}
     
-	\begin{minipage}{0.5\textwidth} %Minipage pour faire deux colonnes
-		\begin{flushleft} \large %Envoyer à gauche
-		\emph{\textbf{Élèves :}}\\ %Pour le titre au dessus des noms à gauche
-        \eleves\\ %Remplacer pour chacun
+	\begin{minipage}{0.3\textwidth}
+		\begin{flushleft} \large
+			\emph{\textbf{Réalisé par :}}\\
+			\eleves
 		\end{flushleft}
 	\end{minipage}
-	~
-	\begin{minipage}{0.4\textwidth}
+	\hfill
+	\begin{minipage}{0.35\textwidth}
+		\begin{center} \large
+			\emph{\textbf{Proposé par :}} \\
+			\entreprise
+		\end{center}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.3\textwidth}
 		\begin{flushright} \large
-		\emph{\textbf{Enseignants :}} \\
-		 \enseignant \\
+			\emph{\textbf{Supervisé par :}} \\
+			\enseignant
 		\end{flushright}
-	\end{minipage}\\[3cm]
+	\end{minipage}
+	
+	\vspace{2cm}
     
-	\vfill
-	{\large \today\par} %Affichage de la date
+	{\large Année académique 2024-2025 \par} %Affichage de la date
 
 \end{titlepage}
 }

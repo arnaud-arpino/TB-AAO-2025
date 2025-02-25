@@ -8,8 +8,9 @@
     Diamètre intérieur = 2,5 ± 0,05 mm; \\
     Longueur = 10 mm
 
-    \item \textbf{Réacteurs}: Flacons à sertir en verre dimension: 11 mm, 12 x 32, 2 ml 
-    
+    \item \textbf{Réacteurs}: Flacons à sertir en verre dimension: 11 mm, 12 x 32, 2 ml\\
+    REF: 11211-CASE  « Para-Dox »
+
     \item \textbf{Bloc de réaction}: Plaques « Para-Dox » avec 48 positions, Gen II, pour flacons 12 x 32
 \end{itemize}
 
@@ -30,7 +31,6 @@
     {\color[HTML]{000000} \textbf{\#}} & {\color[HTML]{000000} \textbf{Besoin}}           \\ \hline
     {\color[HTML]{000000} \textbf{1}} & {\color[HTML]{000000} Ouvrir des micro-capsules} \\ \hline
     {\color[HTML]{000000} \textbf{2}} & {\color[HTML]{000000} } \\ \hline
-    {\color[HTML]{000000} \textbf{}}  & {\color[HTML]{000000} } \\ \hline
     \end{tabular}
     \caption{Liste des besoins du système}
     \label{tab:besoin}
@@ -52,11 +52,11 @@ Les fonctions de services correspondes aux exigences principales du produits (r�
     \multicolumn{2}{l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{Fonctions de service}}} &
       \multicolumn{2}{l}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{Exigences}}} \\ \hline
     \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{FS 1}}} &
-      {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Doit être en mesure \\ de détruire une micro-capsule\end{tabular}} &
+      {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Doit être en mesure  de détruire plusieurs \\ micro-capsules dans un réacteur.\end{tabular}} &
       \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{E 1}}} &
       {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Libération totale du réactif \\ (débris de verres inclus)\end{tabular}} \\ \hline
     \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{FS 2}}} &
-      {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Doit être en capable \\ de répéter la tâche\end{tabular}} &
+      {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Doit effectuer la fonction sur tout \\les réacteurs de la plaque para-dox.\end{tabular}} &
       \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{E 2}}} &
       \cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Répétabilité de la tâche \\ 48 fois par plaque\end{tabular}} \\ \hline
     \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{FS 3}}} &
@@ -73,17 +73,24 @@ Les fonctions de services correspondes aux exigences principales du produits (r�
 \begin{table}[H]
   \centering
   \begin{tabular}{cl|cl}
-  \multicolumn{2}{l|}{\textbf{Fonctions techniques}}                   & \multicolumn{2}{l}{\textbf{Exigences}}                                         \\ \hline
+  \multicolumn{2}{l|}{\textbf{Fonctions techniques}} &
+    \multicolumn{2}{l}{\textbf{Exigences}} \\ \hline
   \multicolumn{1}{c|}{\textbf{FT 1}} &
     \begin{tabular}[c]{@{}l@{}}Doit fonctionner dans \\ un environnement contrôlé.\end{tabular} &
     \multicolumn{1}{c|}{\textbf{E 5}} &
-    \begin{tabular}[c]{@{}l@{}}Glove box rempli uniquement \\ d'azote à température ambiante.\end{tabular} \\ \hline
-  \multicolumn{1}{c|}{\textbf{FT 2}} & Doit être simple d'utilisation. & \multicolumn{1}{c|}{\textbf{E 6}} & Mise en place par un laborantin de chimie. \\ \hline
+    \begin{tabular}[c]{@{}l@{}}Glove box rempli uniquement\\ d’azote à température ambiante\\ et en surpression.\end{tabular} \\ \hline
+  \multicolumn{1}{c|}{\textbf{FT 2}} &
+    Doit être dépannable facilement. &
+    \multicolumn{1}{c|}{\textbf{E 6}} &
+    \begin{tabular}[c]{@{}l@{}}Accessibilité simple et adapté \\ à un laborantin de chimie.\end{tabular} \\ \hline
   \multicolumn{1}{c|}{\textbf{FT 3}} &
-    \begin{tabular}[c]{@{}l@{}}Doit assurer la sécurité de \\ l'utilisateur et de des équipements \\ lors du fonctionnement.\end{tabular} &
+    \begin{tabular}[c]{@{}l@{}}Doit alerter l'utilisateur en cas de\\ défaillance et éviter l'endommagement\\ des appareils.\end{tabular} &
     \multicolumn{1}{c|}{\textbf{E 7}} &
-    \begin{tabular}[c]{@{}l@{}}Protection contre projection, \\ capteur ou système de sécurité \\ en cas de défaillance ou conditions anormale.\end{tabular} \\ \hline
-  \multicolumn{1}{c|}{\textbf{FT 4}} &                                 & \multicolumn{1}{c|}{\textbf{E 8}} &                                           
+    \begin{tabular}[c]{@{}l@{}}Capteurs ou système de sécurité \\ en cas de défaillance ou conditions anormale..\end{tabular} \\ \hline
+  \multicolumn{1}{c|}{\textbf{FT 4}} &
+    \begin{tabular}[c]{@{}l@{}}Doit assurer la sécurité de l'utilisateur \\ en cas de défaillance.\end{tabular} &
+    \multicolumn{1}{c|}{\textbf{E 8}} &
+    Protection contre les débris de verre.
   \end{tabular}
   \caption{Fonctions techniques}
   \label{tab:fctstechnique}
@@ -96,9 +103,16 @@ Les fonctions de services correspondes aux exigences principales du produits (r�
 \begin{table}[H]
   \centering
   \begin{tabular}{cl|cl}
-  \multicolumn{2}{l|}{\textbf{Fonctions de contrainte}}                   & \multicolumn{2}{l}{\textbf{Exigences}}                       \\ \hline
-  \multicolumn{1}{c|}{\textbf{FC 1}} & Doit éviter la cross contamination & \multicolumn{1}{c|}{\textbf{E 9}}  & Système anti-projection \\ \hline
-  \multicolumn{1}{c|}{\textbf{FC 2}} &                                    & \multicolumn{1}{c|}{\textbf{E 10}} &                        
+  \multicolumn{2}{l|}{\textbf{Fonctions de contrainte}} &
+    \multicolumn{2}{l}{\textbf{Exigences}} \\ \hline
+  \multicolumn{1}{c|}{\textbf{FC 1}} &
+    \begin{tabular}[c]{@{}l@{}}Doit éviter la cross contamination\\ entre les réacteurs\end{tabular} &
+    \multicolumn{1}{c|}{\textbf{E 9}} &
+    Système anti-projection \\ \hline
+  \multicolumn{1}{c|}{\textbf{FC 2}} &
+    \begin{tabular}[c]{@{}l@{}}Doit s'assurer de la libération \\ du réatif\end{tabular} &
+    \multicolumn{1}{c|}{\textbf{E 10}} &
+    Vérification du cassage
   \end{tabular}
   \caption{Fonctions de contrainte}
   \label{tab:fctscontr}

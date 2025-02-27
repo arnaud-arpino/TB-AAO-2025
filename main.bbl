@@ -57,5 +57,28 @@
     \field{type}{techreport}
     \field{year}{2024}
   \endentry
+
+  \entry{swisscatweb}{article}{}
+    \name{author}{1}{}{%
+      {{hash=EPDCCPDNC}{%
+         family={(EPFL)},
+         familyi={E\bibinitperiod},
+         given={Prof. Dr. Christophe Copéret \& Prof. Dr.
+  Nicolai\bibnamedelima Cramer},
+         giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  C\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  \bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim
+  D\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EPDCCPDNC1}
+    \strng{fullhash}{EPDCCPDNC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{SwissCAT+}
+    \field{year}{2022}
+  \endentry
 \enddatalist
 \endinput

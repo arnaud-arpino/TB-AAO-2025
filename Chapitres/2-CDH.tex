@@ -53,13 +53,13 @@ Les fonctions de services correspondes aux exigences principales du produits.
   \multicolumn{1}{c|}{\textbf{FS 1}} &
     \begin{tabular}[c]{@{}l@{}}Doit être en mesure d'ouvrir plusieurs\\ micro-capsules dans un réacteur.\end{tabular} &
     \multicolumn{1}{c|}{\textbf{E 1}} &
-    \begin{tabular}[c]{@{}l@{}}Ouverture des micro-capsules\\ contrôlée, sans contrainte sur \\ la présence de débris de verre.\end{tabular} \\ \hline
+    \begin{tabular}[c]{@{}l@{}}Ouverture jusqu'à 5 micro-capsules \\ par réacteur, sans contrainte sur \\ la présence de débris de verre.\end{tabular} \\ \hline
   \multicolumn{1}{c|}{\textbf{FS 2}} &
     \begin{tabular}[c]{@{}l@{}}Doit effectuer la fonction sur tout\\ les réacteurs de la plaque para-dox.\end{tabular} &
     \multicolumn{1}{c|}{\textbf{E 2}} &
     \begin{tabular}[c]{@{}l@{}}Répétabilité de la tâche\\ 48 fois par plaque.\end{tabular} \\ \hline
   \multicolumn{1}{c|}{\textbf{FS 3}} &
-    \begin{tabular}[c]{@{}l@{}}Doit s’assurer de la libération\\ du réactif.\end{tabular} &
+    \begin{tabular}[c]{@{}l@{}}Doit s'assurer de la libération\\ du réactif lors des essais.\end{tabular} &
     \multicolumn{1}{c|}{\textbf{E 3}} &
     \begin{tabular}[c]{@{}l@{}}La masse de réactif libéré est \\ précise à 0.01 mg.\end{tabular}
   \end{tabular}
@@ -97,28 +97,36 @@ Les fonctions techniques corresponde aux caractéristiques techniques que doit i
   \label{tab:fctstechnique}
   \end{table}
 
+\newpage
 \subsubsection{Fonctions de contraintes}
 
 Les fonctions de contraintes correspondent à des exigences imposé par le client ou par la configuration des lieux.
 
 \begin{table}[H]
   \centering
-  \begin{tabular}{cl|cl}
+  \begin{tabular}{ll|ll}
   \multicolumn{2}{l|}{\textbf{Fonctions de contrainte}} &
     \multicolumn{2}{l}{\textbf{Exigences}} \\ \hline
   \multicolumn{1}{c|}{\textbf{FC 1}} &
-    \begin{tabular}[c]{@{}l@{}}Doit éviter la cross contamination\\ entre les réacteurs\end{tabular} &
+    \begin{tabular}[c]{@{}l@{}}Doit éviter la cross contamination\\ entre les réacteurs.\end{tabular} &
     \multicolumn{1}{c|}{\textbf{E 9}} &
-    Système anti-projection \\ \hline
+    Système anti-projection. \\ \hline
   \multicolumn{1}{c|}{\textbf{FC 2}} &
-    \begin{tabular}[c]{@{}l@{}} Doit fonctionner dans un espace \\ restreint.\end{tabular} &
-  \multicolumn{1}{c|}{\textbf{E 10}} & 
-    \begin{tabular}[c]{@{}l@{}}Dimensions maximal de travail: \\ 110 cm x 90 cm x 60 cm. \end{tabular}
+    \begin{tabular}[c]{@{}l@{}}Doit s'assurer de la répétabilité \\ du système.\end{tabular} &
+    \multicolumn{1}{c|}{\textbf{E 10}} &
+    \begin{tabular}[c]{@{}l@{}}Sur 100 capsules, cassage\\ systématique.\end{tabular} \\ \hline
+  \multicolumn{1}{l|}{\textbf{FC 3}} &
+    \begin{tabular}[c]{@{}l@{}}Doit effectuer un cycle complet\\ dans un temps raisonnable.\end{tabular} &
+    \multicolumn{1}{l|}{\textbf{E 11}} &
+    Temps de cycle max 1h \\ \hline
+  \multicolumn{1}{l|}{\textbf{FC 4}} &
+    \begin{tabular}[c]{@{}l@{}}Doit s'assurer de l'intégrité des réactifs\\ après cassage.\end{tabular} &
+    \multicolumn{1}{l|}{\textbf{E 12}} &
+    \begin{tabular}[c]{@{}l@{}}Mesure effectuée durant les \\ phases de test.\end{tabular}
   \end{tabular}
   \caption{Fonctions de contrainte}
   \label{tab:fctscontr}
   \end{table}
-
 
 
 

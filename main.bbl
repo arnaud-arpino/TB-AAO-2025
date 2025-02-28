@@ -17,7 +17,7 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
-  \entry{swisscatweb}{article}{}
+  \entry{swisscatweb}{online}{}
     \name{author}{1}{}{%
       {{hash=EPDCCPDNC}{%
          family={(EPFL)},
@@ -37,7 +37,28 @@
     \field{sortinit}{E}
     \field{sortinithash}{E}
     \field{title}{SwissCAT+}
+    \verb{url}
+    \verb https://swisscatplus.ch/
+    \endverb
     \field{year}{2022}
+  \endentry
+
+  \entry{ref_vial}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=L}{%
+         family={{LabSphere}},
+         familyi={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{L1}
+    \strng{fullhash}{L1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+  \field{howpublished}{\url{https://distributionls.com/products/la-pha-pack-11-09-0519}}
+    \field{note}{Consulté le 28 février 2025}
+    \field{title}{{SKU: 11 09 0519}}
   \endentry
 \enddatalist
 \endinput
